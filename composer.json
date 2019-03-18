@@ -15,5 +15,12 @@
         "files": [
             "src/Support/helpers.php"
         ]
-    }
+    },
+    "extra": {
+        "laravel": {
+            "providers":[
+                "ProgramZheng\\LaravelTranslationTxt\\TranslationTxtServiceProvider"
+            ]
+        }
+    },
 }
