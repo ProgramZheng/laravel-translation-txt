@@ -27,10 +27,10 @@ class TranslationTxtExportCommand extends Command
      *
      * @return void
      */
-    public function __construct(TranslationTxtService $translationTxtService)
+    public function __construct()
     {
         parent::__construct();
-        $this->translationTxtService = $translationTxtService;
+        $this->translationTxtService = new TranslationTxtService;
     }
 
     /**
