@@ -27,10 +27,10 @@ class TranslationTxtExportCommand extends Command
      *
      * @return void
      */
-    public function __construct(TranslationTxt $translationTxt)
+    public function __construct(TranslationTxtService $translationTxtService)
     {
         parent::__construct();
-        $this->translationTxt = $TranslationTxt;
+        $this->translationTxtService = $translationTxtService;
     }
 
     /**
@@ -42,7 +42,7 @@ class TranslationTxtExportCommand extends Command
     {
         //
         $langArray = explode(",",$this->argument('lang'));
-        $response = $this->translationTxt->exportArrayTxt($langArray);
+        $response = $this->translationTxtService->exportArrayTxt($langArray);
         $this->sayFinish($response);
     }
 
