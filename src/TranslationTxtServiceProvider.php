@@ -3,6 +3,7 @@
 namespace ProgramZheng\LaravelTranslationTxt;
 
 use Illuminate\Support\ServiceProvider;
+use ProgramZheng\LaravelTranslationTxt\TranslationTxtService;
 use ProgramZheng\LaravelTranslationTxt\Console\TranslationTxtExportCommand;
 
 class TranslationTxtServiceProvider extends ServiceProvider
@@ -29,5 +30,8 @@ class TranslationTxtServiceProvider extends ServiceProvider
     public function register()
     {
         //
+        $this->app->singleton('LangImportExportLangListService', function() {
+			return new LangListService;
+		});
     }
 }
