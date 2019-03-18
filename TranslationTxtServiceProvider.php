@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Providers;
+namespace ProgramZheng\LaravelTranslationTxt;
 
 use Illuminate\Support\ServiceProvider;
+use ProgramZheng\LaravelTranslationTxt\Console\TranslationTxtExportCommand;
 
 class TranslationTxtServiceProvider extends ServiceProvider
 {
@@ -14,6 +15,10 @@ class TranslationTxtServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        $this->app->singleton('laravel-translation-export.txt', function($app)	{
+			return new TranslationTxtExportCommand();
+		});
+		$this->commands('laravel-translation-export.txt');
     }
 
     /**
