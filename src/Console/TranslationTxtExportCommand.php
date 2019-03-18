@@ -3,7 +3,7 @@
 namespace ProgramZheng\LaravelTranslationTxt\Console;
 
 use Illuminate\Console\Command;
-use ProgramZheng\LaravelTranslationTxt\TranslationTxt;
+use ProgramZheng\LaravelTranslationTxt\TranslationTxtService;
 
 class TranslationTxtExportCommand extends Command
 {

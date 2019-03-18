@@ -4,7 +4,7 @@ namespace ProgramZheng\LaravelTranslationTxt;
 use File;
 use Storage;
 
-class TranslationTxt
+class TranslationTxtService
 {
 
     public function exporJsonTxt($langArray = [])
