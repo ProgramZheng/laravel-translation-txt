@@ -1,0 +1,19 @@
+{
+    "name": "programzheng/laravel-translation-txt",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "programzheng",
+            "email": "esz759486@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "ProgramZheng\\LaravelTranslationTxt\\": "src/"
+        },
+        "files": [
+            "src/Support/helpers.php"
+        ]
+    }
+}
