@@ -1,6 +1,6 @@
 <?php
 
-namespace ProgramZheng\LaravelTranslationTxt\Commands;
+namespace ProgramZheng\LaravelTranslationTxt\Console;
 
 use Illuminate\Console\Command;
 use ProgramZheng\LaravelTranslationTxt\TranslationTxt;
