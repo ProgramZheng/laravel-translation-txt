@@ -17,9 +17,9 @@ class TranslationTxtServiceProvider extends ServiceProvider
     {
         //
         $this->app->singleton('laravel-translation-export.txt', function($app)	{
-			return new TranslationTxtExportCommand();
-		});
-		$this->commands('laravel-translation-export.txt');
+          return new TranslationTxtExportCommand();
+        });
+        $this->commands('laravel-translation-export.txt');
     }
 
     /**
@@ -30,8 +30,5 @@ class TranslationTxtServiceProvider extends ServiceProvider
     public function register()
     {
         //
-        $this->app->singleton('LangImportExportLangListService', function() {
-			return new LangListService;
-		});
     }
 }
