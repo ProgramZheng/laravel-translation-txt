@@ -32,7 +32,7 @@ if ( !function_exists('var_export_array_txt'))
     function var_export_array_txt($var, $indent="") {
         switch (gettype($var)) {
             case "string":
-                return "'" . str_replace("'", "\'", $var) . "'";
+                return '"' . str_replace("'", "\'", $var) . '"';
             case "array":
                 $indexed = array_keys($var) === range(0, count($var) - 1);
                 $r = [];
